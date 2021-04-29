@@ -1,0 +1,327 @@
+% %% 이 파일은 서울대학교 산업공학과 학위논문 양식을 정의하기 위해 아래 원저자와 1차 수정자가 
+% %% 수정한 파일을 서울대학교 산업공학과에서 재수정하여 만든 파일입니다. (2018년 4월)
+% %% 원저자: zeta709 (zeta709@gmail.com) 
+% %% 1차 수정자: 서울대학교 데이터마이닝연구실 
+
+% \RequirePackage{fix-cm} 
+
+% % 옵션 수정 가능 
+% % oneside/twoside : 단면 인쇄, 양면 인쇄 
+% % openright : 챕터가 홀수쪽에서 시작
+% % draft, final,etc....
+% \documentclass[oneside, phd]{snuthesis_utf8_eng}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% 목차 양식을 변경하는 코드
+% %% subfigure (subfig) package 사용 여부에 따라
+% %% tocloft의 옵션을 다르게 지정해야 한다.
+% %\usepackage[titles,subfigure]{tocloft} % when you use subfigure package
+% \usepackage[titles]{tocloft} % when you don't use subfigure package
+% %\usepackage{subfig}
+% \usepackage{amsmath,amssymb,amsthm,kotex,color}
+% \usepackage{tikz}
+% \usetikzlibrary{shapes,arrows}
+% \usepackage[]{algpseudocode,algorithm,algorithmicx}
+% \usepackage{setspace}
+% \usepackage{array}
+% \usepackage{romanbar}
+% \usepackage{pgfplots}
+% \usepackage{caption}
+% \usepackage{subcaption}
+% \usepackage{booktabs, multirow}
+% \usepackage{natbib}
+% \usepackage{threeparttable}
+% \usepackage{multirow}
+% \usepackage{rotating}
+% \usepackage{comment}
+% %\usepackage{indentfirst}\setlength\parindent{2em}
+
+% \makeatletter % don't delete me
+% \renewcommand\cftchappresnum{Chapter~}
+% \renewcommand\cftfigpresnum{Figure~}
+% \renewcommand\cfttabpresnum{Table~}
+% \renewcommand{\algorithmicforall}{\textbf{foreach}}
+
+% \newtheorem{theorem}{Theorem}[chapter]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{proposition}[theorem]{Proposition}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{Proposition}{Proposition}
+% \newtheorem{remark}{Remark}[chapter]
+% \newtheorem{example}{Example}[chapter]
+% \usepackage[pdftex,bookmarks=true]{hyperref}
+
+% \makeatother % don't delete me
+% \newlength{\mytmplen}
+% \settowidth{\mytmplen}{\bfseries\cftchappresnum\cftchapaftersnum}
+% \addtolength{\cftchapnumwidth}{\mytmplen}
+% \settowidth{\mytmplen}{\bfseries\cftfigpresnum\cftfigaftersnum}
+% \addtolength{\cftfignumwidth}{\mytmplen}
+% \settowidth{\mytmplen}{\bfseries\cfttabpresnum\cfttabaftersnum}
+% \addtolength{\cfttabnumwidth}{\mytmplen}
+% %% 목차 양식을 변경하는 코드 끝
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% 다른 패키지 로드
+% %% http://faq.ktug.or.kr/faq/pdflatex%B0%FAlatex%B5%BF%BD%C3%BB%E7%BF%EB
+% %% 필요에 따라 직접 수정 필요
+% \ifpdf
+% 	% \input glyphtounicode\pdfgentounicode=1 %type 1 font사용시
+% 	%\usepackage[pdftex,unicode]{hyperref} % delete me
+% 	%\usepackage[pdftex]{graphicx}
+% 	%\usepackage[pdftex,svgnames]{xcolor}
+% \else
+% 	%\usepackage[dvipdfmx,unicode]{hyperref} % delete me%
+% 	%\usepackage[dvipdfmx]{graphicx}
+% 	%\usepackage[dvipdfmx,svgnames]{xcolor}
+% \fi
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %
+% %% \title : 22pt로 나오는 큰 제목
+% %% \title*: 16pt로 나오는 작은 제목
+
+% \title{Mathematical Optimization Approaches for Solving Production Planning Problems}
+% \title*{생산 계획 문제 해결을 위한 최적화 기법}
+% \titlen{}
+
+% \author{Gildong~Hong}
+% \author*{홍길동} % Same as \author.
+% \authorn{홍~길~동}
+% \phonenumber{010-1234-1234}
+% \studentnumber{2018-12345}
+% \advisor{Advisor~Lee}
+% \advisor*{이지도}
+% \advisorn{이~지~도}
+% \graddate{2019~년~~2~월}
+% \submissiondate{2018~년~~11~월}
+% \submissiondaten{2018~년~~11~월~~1~일}
+% \approvaldate{2018~년~~12~월}
+
+% \committeemembers%
+% {김 원 장}%
+% {이 지 도}%
+% {박 위 원}%
+% {최 위 원}%
+% {한 위 원}%
+
+% %% Length of underline
+% \setlength{\committeenameunderlinelength}{5cm}
+
+% \begin{document}
+% \pagenumbering{Roman}
+% \makefrontcover
+% \makeapproval
+
+% %agreement page
+% \cleardoublepage
+% %\makeagreement
+% %\cleardoublepage
+% \pagenumbering{roman}
+% \keyword{Production planning, Optimization, Industrial engineering}
+% \begin{abstract}
+% In this thesis, we consider a production planning problem arising in real-world industry. We propose mathematical optimization techniques for solving the problem. We verify that the proposed solution approaches are more effective than existing methods.
+% \end{abstract}
+
+% %목차 구성
+% \tableofcontents
+% \addcontentsline{toc}{chapter}{\contentsname}
+% \cleardoublepage
+
+% \listoftables
+% \addcontentsline{toc}{chapter}{\listtablename}
+% \cleardoublepage
+
+% \listoffigures
+% \addcontentsline{toc}{chapter}{\listfigurename}
+% \cleardoublepage
+
+
+
+% % \centering \textbf{List of Symbols} 
+
+% % \textbf{Latin uppercase}
+
+% % \begin{tabular}{@{}ll}
+% % $\lambda$ & 1-Dimension Advection-Dispersion Equation \\
+% % BTC & Breakthrough Curve \\
+% % DR & Discrepancy Ratio \\
+% % GA & Genetic Algorithm \\
+% % GP & Genetic Programming \\
+% % HTS & Hyporheic Transient Storage \\
+% % MGGP & Multi-Gene Genetic Programming \\
+% % MSE & Mean Squared Error \\
+% % MSL & Mean Sea Level \\
+% % OAT & One-At-a-Time \\
+% % OTIS & One-Dimensional Transport with Inflow and Storage\\
+% % PCR & Principal Components Regression\\
+% % RMSE & Root Mean Squared Error\\
+% % % RPCR & Robust Principal Components Regression\\
+% % RTD & Residence Time Distribution \\
+% % RWT & Rhodamine WT \\
+% % SC-SAHEL & Shuffled Complex-Self Adaptive EvoLution\\
+% % SCE-UA & Shuffled Complex Evolution-University of Arizona\\
+% % SI & Sensitivity Index\\
+% % STS & Surface Transient Storage \\
+% % TSM & Transient Storage Model\\
+% % VIF & Variance Inflation Factor \\
+% % \end{tabular}
+
+% % \cleardoublepage
+
+% \pagenumbering{arabic}
+
+% \chapter{Introduction}\label{c1}
+% Production planning problem has been an important issue for the last decades. For the high-technology industry, in particular, importance of the elaborate production plan greatly increases since each product has high value. 
+
+% In this thesis, we consider the production planning problem occurs in real-world high-technology industry. We start by describing the problem in Section \ref{s1.1}.
+
+% \section{Problem Description}\label{s1.1}
+%  This problem is very hard to solve as shown in Copil et al. \cite{copil2017simultaneous}. An illustration of the problem is shown in Figure \ref{f-1}.  
+% \begin{figure}[h]\centering
+% \includegraphics[scale=.35]{./fig/fig_example}
+% \caption{An illustration of the problem} \label{f-1}
+% \end{figure}
+
+% \newpage
+% \section{Research Motivation and Contribution}\label{s1.2}
+% Our research motivations and main contributions of the thesis are as follow:
+% \begin{enumerate}
+% \item[(a)] We introduce a production planning problem which is not studied yet.
+% \item[(b)] We propose various solution approaches based on mathematical optimization techniques.
+% \item[(c)] We conduct computational experiments on various datasets to verify the effectiveness of proposed solution approaches
+% \end{enumerate}
+
+% \newpage
+% \section{Organization of the Thesis}\label{s1.3}
+% The thesis is composed of 5 chapters. In Chapter \ref{c2}, we review literatures related to the problem. In Chapter \ref{c3}, we propose various solution approaches. In Chapter \ref{c4}, results of computational experiments are presented. Finally, in Chapter \ref{c5}, we give concluding remarks and possible future research directions of this thesis.
+
+% \chapter{Literature Review}\label{c2}
+% \section{Review on Production Planning Problem}\label{s2.1}
+% Lots of studies to solve production planning problem are done (see e.g. \cite{bertsimas1997introduction, gicquel2008mip, jans2008modeling,wolsey1998integer}). We extend the solution approach proposed by Duarte et al. \cite{duarte2013discrete}.
+
+
+% \newpage
+% \chapter{Solution Approaches}\label{c3}
+% \section{Exact Approaches}\label{s3.1}
+%  Total cost $f_0(x)$ is the sum of fixed cost $fc(x)$ and variable cost $vc(x)$. In other words, following equation is true.
+% \begin{equation}
+% f_0(x)=fc(x)+vc(x)
+% \end{equation}
+
+% Now we can formulate the problem as follow.
+% \begin{align}
+% \text{minimize} \qquad &f_0(x) \label{e1} \\
+% \text{subject to} \qquad &f_i(x)\leq 0 &\forall i \in I \label{e2}\\
+% &g_j(x)=0 &\forall j \in J \label{e3}\\
+% &x\in \mathbb{X} \label{e4}
+% \end{align}
+% (\ref{e1}) is an objective function for the problem. (\ref{e2}) and (\ref{e3}) are constraints of the problem. Domain of the decision variables is expressed as (\ref{e4}).
+% \begin{proposition}\label{p3.1}\setstretch{1.5}
+% We can solve (\ref{e1})-(\ref{e4}) in polynomial time.  
+% \begin{proof}
+% Since $f_0, f_i ,g_j$ are linear functions and $\mathbb{X}$ is a polyhedron, we can use LP.
+% \end{proof}
+% \end{proposition}
+% \newpage
+% \section{Heuristic Approaches}\label{s3.2}
+% Pseudo code for the heuristic algorithm is as follows.
+% \begin{algorithm}[h]
+% \begin{algorithmic}
+
+% \State $\mathcal{RP} \leftarrow$ LP relaxation of $\mathcal{P}$, 
+% \State $n \leftarrow 0;$
+% \While{$nl+r \leq |T|$}
+%  \ForAll{$i \in I$, $t \in [nl, nl+r]$}
+%   \State declare $x_{it} \in \{0,1\}$ in $\mathcal{RP}$;
+%  %\EndFor
+%  \EndFor
+%  \State solve $\mathcal{RP}$ and get solution $(\bar{x})$;
+%  \ForAll{$i \in I$, $t \in [nl, (n+1)l]$}
+%   \If{$\overline{x}_{it}=1$}
+%   \State fix $x_{it} = \overline{x}_{it}$
+%   \EndIf
+%  \EndFor
+%  \State $n\leftarrow n+1;$
+% \EndWhile \\
+% \Return feasible solution for $\mathcal{P}$;
+% \caption{Heuristic Algorithm ($\mathcal{P},r,l$)}
+% \end{algorithmic}
+% \end{algorithm}\label{heuristic algorithm}
+
+% \chapter{Computational Experiments}\label{c4}
+% \section{Test Instances}
+% Description of test instance sets are shown in Table \ref{tb1}.
+
+% \begin{table}[h]
+% \centering
+% \caption{Description of test instances}
+% \begin{tabular}{c||c|c|c}
+% \toprule
+% Set& Fixed Cost& Variable Cost & Demand level\\
+% \hline
+% I &	\multirow{2}{*}{0}	&\multirow{2}{*}{0}	&low\\
+% \cline{4-4}
+%  II& & &high\\
+% \hline
+% III &	\multirow{2}{*}{$DU(fc^{min},fc^{max})$}&	\multirow{2}{*}{$DU(vc^{min},vc^{max})$} &low\\
+% \cline{4-4}
+% IV &&&high\\
+% \bottomrule
+% \end{tabular}
+% \label{tb1}
+% \end{table}
+
+% \newpage
+% \section{Test Results}
+%  We use a commercial MIP-solver \cite{xpress} to conduct tests. Test results are shown in  Table \ref{tb2}. This results verify that the proposed method (\textit{New}) is more effective than existing method (\textit{Old}). 
+
+% \begin{table}[h]
+% \centering
+% \begin{footnotesize}
+% \caption{Test results}
+% \begin{tabular}{@{}cc||cc|cc|cc@{}}
+% \toprule
+% \multirow{2}{*}{\textit{Dim}} & \multirow{2}{*}{\textit{Set}}  & \multicolumn{2}{c|}{$Gap$} & \multicolumn{2}{c|}{\textit{Time}}& \multicolumn{2}{c}{\#$Opt$/\#$Feas$}\\
+% && \textit{Old} & \textit{New}& \textit{Old} & \textit{New}& \textit{Old} & \textit{New}\\
+% \hline
+% \multirow{4}{*}{$30\times30$} & I& 61.11 	&3.41 	&0.94 	&0.07 	&10/10	&10/10\\
+% & II&	17.21 	&0.23  		&0.90 	&0.05 	&10/10	&10/10\\
+% & III&	48.62 	&8.17  	 	&0.94 	&0.18 	&10/10	&10/10\\
+% & IV&	15.46 	&0.28 		&0.79 	&0.09 	&10/10	&10/10\\
+% \hline
+% \multirow{4}{*}{$100\times 100$} & I&85.75 	&5.24 		&559.19 	&9.71 	&2/10	&10/10\\
+% &II&9.87 	&0.53 		&394.92 	&2.82 	&8/10	&10/10\\
+% &III&77.11 	&61.47  	&600 	&600 	&0/3	&6/10\\
+% &IV&20.71 	&10.47	&496.36 	&409.06 	&0/5	&5/10\\
+% \bottomrule
+% \end{tabular}
+% \label{tb2}
+% \end{footnotesize}
+% \end{table}
+
+% \chapter{Conclusion}\label{c5}
+% \section{Conclusion}\label{s5.1}
+% We proposed solution approaches for a production planning problem.
+% \section{Future Direction}\label{s5.2}
+% We can extend our approaches to apply to other problems.
+
+
+
+% \begin{bibpage}
+% \renewcommand{\bibname}{References}
+% \bibliography{ref-example}
+% \bibliographystyle{ascelike-new} % Or any other style you like
+% \nocite{*}
+% \end{bibpage}
+
+% \keywordalt{생산계획, 최적화, 산업공학}
+% \begin{abstractalt}
+% 본 논문에서는 실제 산업에서 발생하는 생산계획문제를 소개하고 최적화 기법을 이용하여 이 문제를 해결한다. 실험을 통해 제안된 해법의 효과성을 입증한다.
+% \end{abstractalt}
+
+% \acknowledgement\setstretch{1.6}
+% 서울대학교 산업공학과의 모든 식구들께 감사드립니다. 
+% \end{document}
+
