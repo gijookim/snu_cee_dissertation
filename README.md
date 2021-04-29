@@ -10,7 +10,7 @@ For specifics, refer to the document in the following link: https://ascelibrary.
 (4) You will have to modify the specifics of your documents, including page size, chapter and subchapter title style,  in the "snuthesis_utf8_eng.cls" file.
 Please feel free to modify them accordingly.
 
-The necessary files are all in: "snu_dissertation_sample.zip"
+The necessary files are all in: "snu_dissertation_sample.zip"\
 The compiled document after adding the title page will ideally look like "snucee_sample_template (with title).pdf."
 
 If you have any suggestions regarding the improvement of the template, please contact me through email.\
