@@ -10,5 +10,7 @@ For specifics, refer to the document in the following link: https://ascelibrary.
 (4) You will have to modify the specifics of your documents, including page size, chapter and subchapter title style,  in the "snuthesis_utf8_eng.cls" file.
 Please feel free to modify them accordingly.
 
+The compiled document will look like "snucee_sample_template (with title).pdf."
+
 If you have any suggestions regarding the improvement of the template, please contact me through email.\
 (gjk_0494@snu.ac.kr or gijoo-kim@naver.com)
