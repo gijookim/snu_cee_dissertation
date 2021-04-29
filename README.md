@@ -10,4 +10,4 @@ For specifics, refer to the following URL: https://ascelibrary.org/doi/pdf/10.10
 (4) You will have to modify the specifics of your documents, including page size, chapter and subchapter title style,  in the "snuthesis_utf8_eng.cls" file.
 Please feel free to modify them accordingly.
 
-If you have any suggestions regarding the improvement of the template, please contact me through email (gjk_0494@snu.ac.kr or gijoo-kim@naver.com)
+If you have any suggestions regarding the improvement of the template, please contact me through email.\ (gjk_0494@snu.ac.kr or gijoo-kim@naver.com)
