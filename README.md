@@ -1,6 +1,6 @@
 # LaTeX Template for Dissertations of Department of Civil and Environmental Engineering, Seoul National University.
 
-This template is a sample LaTeX document designed for both M.S. and Ph.D. dissertation of Department of Civil and Environmental Engineering, Seoul National University.\
+This template is a sample LaTeX document designed for both M.S. and Ph.D. dissertation of Department of Civil and Environmental Engineering, Seoul National University.
 
 Please read through the following insturctions before working with this template:\
 (1) The "phd_sample.tex" file serves as the main document. Work on this .tex file for your dissertation.\
